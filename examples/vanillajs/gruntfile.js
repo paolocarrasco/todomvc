@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-eslint');
 
   grunt.initConfig({
@@ -12,7 +13,13 @@ module.exports = function (grunt) {
       }
     },
     eslint: {
-        target: ['js/*.js']
+      target: ['js/*.js']
+    },
+    watch: {
+      js: {
+        files: ['js/*.js'],
+        tasks: ['eslint', 'jasmine']
+      }
     }
   });
 
