@@ -15,4 +15,9 @@ module.exports = function (grunt) {
         target: ['js/*.js']
     }
   });
+
+  grunt.registerTask('default', [
+    'eslint',
+    'jasmine'
+  ]);
 };
