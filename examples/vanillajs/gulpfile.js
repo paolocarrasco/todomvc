@@ -15,3 +15,12 @@ gulp.task('test', function() {
     .pipe(jasmine.specRunner({console: true}))
     .pipe(jasmine.headless());
 });
+
+gulp.task('watch-js', function() {
+  return gulp
+    .watch(
+      ['js/*.js', 'test/*Spec.js'],
+      ['lint', 'test']
+    );
+});
+
