@@ -24,3 +24,5 @@ gulp.task('watch-js', function() {
     );
 });
 
+gulp.task('default', ['lint', 'test', 'watch-js']);
+
