@@ -7,6 +7,8 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-jasmine-browser": "^0.2.3",
-    "jasmine-core": "^2.0.0"
+    "gulp-jshint": "^2.0.0",
+    "jasmine-core": "^2.0.0",
+    "jshint": "^2.8.0"
   }
 }
